@@ -25,7 +25,7 @@ function validate() {
 	// Validate fields entered by the user: name, phone, password, and email
 
 
-	let regulExName = new RegExp(/^[A-Za-z]+$/);
+	let regulExName = new RegExp(/^[A-Za-z]+$/); //ex reg para control letras
 
 	if (fName.value.length >= 3 && regulExName.test(fName.value)) {
 	} else {
@@ -35,7 +35,7 @@ function validate() {
 		error = 1;
 	}
 
-	let regulExLastN = new RegExp(/^[A-Za-z]+$/);
+	let regulExLastN = new RegExp(/^[A-Za-z]+$/); //ex reg para control letras
 
 	if (fLastN.value.length >= 3 && regulExLastN.test(fLastN.value)) {
 	} else {
@@ -45,7 +45,7 @@ function validate() {
 	}
 
 
-	let regulExEmail = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+	let regulExEmail = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'); //ex reg para control mail
 
 	if (fEmail.value.length >= 3 && regulExEmail.test(fEmail.value)) {
 
@@ -56,7 +56,7 @@ function validate() {
 	}
 
 
-	let regulExFPhone = new RegExp(/^[0-9]+$/);
+	let regulExFPhone = new RegExp(/^[0-9]+$/); //ex reg para control numeros
 
 	if (fPhone.value.length === 9 && regulExFPhone.test(fPhone.value)) {
 
@@ -66,7 +66,7 @@ function validate() {
 		error = 1;
 	}
 
-	let regulExPass = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{4,8}$/);
+	let regulExPass = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{4,8}$/); //ex reg para control passw
 
 	if ( regulExPass.test(fPassword.value)) {
 
@@ -76,7 +76,7 @@ function validate() {
 		error = 1;
 	}
 
-	let regulExAdress = new RegExp(/[A-Za-z0-9]+/g);
+	let regulExAdress = new RegExp(/[A-Za-z0-9]+/g); //ex reg puede contener letras/num/ espacios
 
 	if (fAddress.value.length >= 3 && regulExAdress.test(fAddress.value)) {
 	} else {

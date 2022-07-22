@@ -70,7 +70,6 @@ var cartList = [];
 var cart = [];
 
 var total = 0;
-
 // Exercise 1
 //comento funcion buy para emplementar addToCard;
 //-------------------------------------------------
